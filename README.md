@@ -5,7 +5,7 @@ Within this repository you will find the code (and data) needed to generate any 
 Raw data is accessible by these links:
 * 16S_rRNA gene:
 * Metagenomic data:
-* Metabolomic data:
+* Metabolomic data: supplemental table 1
 
 Figures not made in R were made in the ecological statistical program called Primer-e (v7).
 
