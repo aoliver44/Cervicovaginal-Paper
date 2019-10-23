@@ -1,0 +1,93 @@
+Dyad	Sample Type	Dominant Microbe	16S_dominant	Avg_bc	direction	Chromatog
+18	SALIVA	G. vaginalis	G. vaginalis	54.85	Related	LC
+62	SALIVA	L. iners	L. iners	55.08	Related	LC
+88	SALIVA	L. crispatus	L. crispatus	47.44	Related	LC
+89	SALIVA	G. vaginalis	G. vaginalis	52.69	Related	LC
+103	SALIVA	other	Undefined!	57.53	Related	LC
+111	SALIVA	L. iners	L. iners	61.85	Related	LC
+120	SALIVA	L. crispatus	L. crispatus	58.01	Related	LC
+126	SALIVA	L. iners	L. iners	59.5	Related	LC
+137	SALIVA	L. iners	L. iners	68.67	Related	LC
+146	SALIVA	G. vaginalis	G. vaginalis	57.6	Related	LC
+151	SALIVA	no_data	no.data	58.4	Related	LC
+157	SALIVA	L. crispatus	L. crispatus	54.88	Related	LC
+180	SALIVA	L. crispatus	L. iners	57.47	Related	LC
+191	SALIVA	L. crispatus	L. crispatus	53.32	Related	LC
+198	SALIVA	L. iners	L. iners	56.46	Related	LC
+201	SALIVA	no_data	no.data	61.05	Related	LC
+202	SALIVA	other	L.sp.other	52.95	Related	LC
+222	SALIVA	L. iners	L. iners	57.24	Related	LC
+18	SALIVA	G. vaginalis	G. vaginalis	49.48	Unrelated	LC
+62	SALIVA	L. iners	L. iners	48.64	Unrelated	LC
+88	SALIVA	L. crispatus	L. crispatus	42.78	Unrelated	LC
+89	SALIVA	G. vaginalis	G. vaginalis	47.65	Unrelated	LC
+103	SALIVA	other	Undefined!	51.53	Unrelated	LC
+111	SALIVA	L. iners	L. iners	53.1	Unrelated	LC
+120	SALIVA	L. crispatus	L. crispatus	51.66	Unrelated	LC
+126	SALIVA	L. iners	L. iners	52.87	Unrelated	LC
+137	SALIVA	L. iners	L. iners	51.74	Unrelated	LC
+146	SALIVA	G. vaginalis	G. vaginalis	51.87	Unrelated	LC
+151	SALIVA	no_data	no.data	51.89	Unrelated	LC
+157	SALIVA	L. crispatus	L. crispatus	49.83	Unrelated	LC
+180	SALIVA	L. crispatus	L. iners	51.22	Unrelated	LC
+191	SALIVA	L. crispatus	L. crispatus	49.93	Unrelated	LC
+198	SALIVA	L. iners	L. iners	49.85	Unrelated	LC
+201	SALIVA	no_data	no.data	53.2	Unrelated	LC
+202	SALIVA	other	L.sp.other	49.11	Unrelated	LC
+222	SALIVA	L. iners	L. iners	51.32	Unrelated	LC
+89	URINE			85.6	Related	LC
+89	URINE			76.57	Unrelated	LC
+103	URINE			83.48	Related	LC
+103	URINE			76.69	Unrelated	LC
+111	URINE			81.71	Related	LC
+111	URINE			76.47	Unrelated	LC
+120	URINE			79.36	Related	LC
+120	URINE			74.22	Unrelated	LC
+126	URINE			69.18	Related	LC
+126	URINE			69.08	Unrelated	LC
+18	SALIVA	G. vaginalis	G. vaginalis	56.12	Related	GC
+62	SALIVA	L. iners	L. iners	58.81	Related	GC
+88	SALIVA	L. crispatus	L. crispatus	46.68	Related	GC
+89	SALIVA	G. vaginalis	G. vaginalis	57	Related	GC
+103	SALIVA	other	Undefined!	56.6	Related	GC
+111	SALIVA	L. iners	L. iners	58.4	Related	GC
+120	SALIVA	L. crispatus	L. crispatus	64.3	Related	GC
+126	SALIVA	L. iners	L. iners	69.6	Related	GC
+137	SALIVA	L. iners	L. iners	69.8	Related	GC
+146	SALIVA	G. vaginalis	G. vaginalis	55.4	Related	GC
+151	SALIVA	no_data	no.data	65.6	Related	GC
+157	SALIVA	L. crispatus	L. crispatus	67.5	Related	GC
+180	SALIVA	L. crispatus	L. iners	61.4	Related	GC
+191	SALIVA	L. crispatus	L. crispatus	59.1	Related	GC
+198	SALIVA	L. iners	L. iners	62.1	Related	GC
+201	SALIVA	no_data	no.data	65.7	Related	GC
+202	SALIVA	other	L.sp.other	45.9	Related	GC
+222	SALIVA	L. iners	L. iners	56.81	Related	GC
+18	SALIVA	G. vaginalis	G. vaginalis	47.72	Unrelated	GC
+62	SALIVA	L. iners	L. iners	48.5	Unrelated	GC
+88	SALIVA	L. crispatus	L. crispatus	35.89	Unrelated	GC
+89	SALIVA	G. vaginalis	G. vaginalis	46	Unrelated	GC
+103	SALIVA	other	Undefined!	48.86	Unrelated	GC
+111	SALIVA	L. iners	L. iners	49.3	Unrelated	GC
+120	SALIVA	L. crispatus	L. crispatus	52.5	Unrelated	GC
+126	SALIVA	L. iners	L. iners	52.5	Unrelated	GC
+137	SALIVA	L. iners	L. iners	54	Unrelated	GC
+146	SALIVA	G. vaginalis	G. vaginalis	46.1	Unrelated	GC
+151	SALIVA	no_data	no.data	52	Unrelated	GC
+157	SALIVA	L. crispatus	L. crispatus	52.2	Unrelated	GC
+180	SALIVA	L. crispatus	L. iners	51.1	Unrelated	GC
+191	SALIVA	L. crispatus	L. crispatus	47.4	Unrelated	GC
+198	SALIVA	L. iners	L. iners	49.6	Unrelated	GC
+201	SALIVA	no_data	no.data	51.5	Unrelated	GC
+202	SALIVA	other	L.sp.other	42	Unrelated	GC
+222	SALIVA	L. iners	L. iners	44.2	Unrelated	GC
+89	URINE			63.33	Related	GC
+89	URINE			59.98	Unrelated	GC
+103	URINE			68.4	Related	GC
+103	URINE			61	Unrelated	GC
+111	URINE			66.24	Related	GC
+111	URINE			60.6	Unrelated	GC
+120	URINE			72.1	Related	GC
+120	URINE			60.2	Unrelated	GC
+126	URINE			69.5	Related	GC
+126	URINE			61.3	Unrelated	GC
