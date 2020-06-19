@@ -29,32 +29,30 @@ lm_eqn <- function(df, y, x){
 setwd("~/Google Drive File Stream/My Drive/CVF Samples/R_stuff/")
 
 # import data and transpose
-raw_data <- read.table("GC_CVF_std_bySample_nounannotated.txt", sep = "\t", row.names = 1)
-trans_data <- as.data.frame(t(raw_data))
+raw_data <- read.table("GC_CVF_std_bySample_nounannotated.txt", sep = "\t", row.names = 1, header = T)
 bact_comparisons <- list(c("L. crispatus", "G. vaginalis"), c("L. crispatus", "L. iners"), c("L. crispatus", "L.sp.other"))
 
 
 # make pretty plots
-trans_data[,1:133] <- sapply(trans_data[,1:133], as.numeric)
 
-indole <- ggplot(data = trans_data) +
-  aes(x = `16S_dominant`, y = as.numeric(as.character(`indole-3-lactate`)), fill = `16S_dominant`) +
+indole <- ggplot(data = raw_data) +
+  aes(x = `X16S_dominant`, y = as.numeric(as.character(indole.3.lactate)), fill = `X16S_dominant`) +
   geom_boxplot() + geom_jitter(width = 0.2) +
   labs(x = '',
        y = 'Indole-3-lactate abundance') +
   theme_bw(base_size = 14) + scale_fill_manual(values=c("goldenrod1", "springgreen3", "turquoise3", "grey60")) +
   theme(legend.position = "none")
 
-mannitol <- ggplot(data = trans_data) +
-  aes(x = `16S_dominant`, y = as.numeric(as.character(mannitol)), fill = `16S_dominant`) +
+mannitol <- ggplot(data = raw_data) +
+  aes(x = `X16S_dominant`, y = as.numeric(as.character(mannitol)), fill = `X16S_dominant`) +
   geom_boxplot() + geom_jitter(width = 0.2) +
   labs(x = 'Dominant Microbe',
        y = 'Mannitol abundance') +
   theme_bw(base_size = 14) + scale_fill_manual(values=c("goldenrod1", "springgreen3", "turquoise3", "grey60")) +
   theme(legend.position = "none")
 
-glucose <- ggplot(data = trans_data) +
-  aes(x = `16S_dominant`, y = as.numeric(as.character(`glucose-1-phosphate`)), fill = `16S_dominant`) +
+glucose <- ggplot(data = raw_data) +
+  aes(x = `X16S_dominant`, y = as.numeric(as.character(`glucose.1.phosphate`)), fill = `X16S_dominant`) +
   geom_boxplot() + geom_jitter(width = 0.2) +
   labs(x = 'Dominant Microbe',
        y = 'G1P abundance') +
@@ -62,17 +60,17 @@ glucose <- ggplot(data = trans_data) +
   theme(legend.position = "none") + 
   stat_compare_means(method = "t.test", comparisons = bact_comparisons)
 
-lactic_acid <- ggplot(data = trans_data) +
-  aes(x = `16S_dominant`, y = as.numeric(as.character(`lactic acid`)), fill = `16S_dominant`) +
+lactic_acid <- ggplot(data = raw_data) +
+  aes(x = `X16S_dominant`, y = as.numeric(as.character(`lactic.acid`)), fill = `X16S_dominant`) +
   geom_boxplot() + geom_jitter(width = 0.2) +
   labs(x = 'Dominant Microbe',
        y = 'Lactic acid abundance') +
   theme_bw(base_size = 14) + scale_fill_manual(values=c("goldenrod1", "springgreen3", "turquoise3", "grey60")) +
   theme(legend.position = "none") 
 
-pyruvate_data <- select(trans_data, `pyruvic acid`, `16S_dominant`)
+pyruvate_data <- select(raw_data, `pyruvic.acid`, `X16S_dominant`)
 pyruvic_acid <- ggplot(data = pyruvate_data) +
-  aes(x = `16S_dominant`, y = `pyruvic acid`, fill = `16S_dominant`) +
+  aes(x = `X16S_dominant`, y = `pyruvic.acid`, fill = `X16S_dominant`) +
   geom_boxplot() + geom_jitter(width = 0.2) +
   labs(x = 'Dominant Microbe',
        y = 'Pyruvic acid abundance') +
@@ -80,8 +78,8 @@ pyruvic_acid <- ggplot(data = pyruvate_data) +
   theme(legend.position = "none") + 
   stat_compare_means(method = "t.test", comparisons = bact_comparisons)
 
-pyruvate_v_mannitol <- select(trans_data, `pyruvic acid`, mannitol, `glucose-1-phosphate`, `16S_dominant`,`lactic acid`, AliqoutID)
-tmp <- subset(pyruvate_v_mannitol, `16S_dominant` == "L. crispatus")
+pyruvate_v_mannitol <- select(raw_data, `pyruvic acid`, mannitol, `glucose-1-phosphate`, `X16S_dominant`,`lactic acid`, AliqoutID)
+tmp <- subset(pyruvate_v_mannitol, `X16S_dominant` == "L. crispatus")
 correlation <- ggplot(data = tmp) +
   aes(x = `pyruvic acid`, y = mannitol) +
   geom_point() +
