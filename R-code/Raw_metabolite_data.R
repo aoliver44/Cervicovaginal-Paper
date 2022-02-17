@@ -25,6 +25,12 @@ lm_eqn <- function(df, y, x){
   )
   as.character(as.expression(eq));                 
 }
+
+give.n <- function(x){
+  return(c(y = median(x)*1.05, label = length(x))) 
+  # experiment with the multiplier to find the perfect position
+}
+
 # set wd
 setwd("~/Google Drive File Stream/My Drive/CVF Samples/R_stuff/")
 
@@ -41,7 +47,8 @@ indole <- ggplot(data = raw_data) +
   labs(x = '',
        y = 'Indole-3-lactate abundance') +
   theme_bw(base_size = 14) + scale_fill_manual(values=c("goldenrod1", "springgreen3", "turquoise3", "grey60")) +
-  theme(legend.position = "none")
+  theme(legend.position = "none") #+ stat_summary(fun.data = give.n, geom = "text", fun.y = median,
+                                                #position = position_dodge(width = 0.75))
 
 mannitol <- ggplot(data = raw_data) +
   aes(x = `X16S_dominant`, y = as.numeric(as.character(mannitol)), fill = `X16S_dominant`) +
@@ -87,4 +94,4 @@ correlation <- ggplot(data = tmp) +
   geom_text(y = 42.5, x = 20, label=lm_eqn(tmp,'`pyruvic acid`','mannitol'),color='red', parse=T) +
   theme_bw(base_size = 14) 
 
-plot_grid(mannitol, pyruvic_acid, correlation, glucose, lactic_acid, labels = "AUTO", ncol = 3, nrow)
+plot_grid(indole,mannitol, ncol = 1)
